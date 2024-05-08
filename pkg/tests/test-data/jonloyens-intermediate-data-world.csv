@@ -1,0 +1,2 @@
+id,name,date,manner_of_death,armed,age,gender,race,city,state,signs_of_mental_illness,threat_level,flee,body_camera,longitude,latitude,location,is_geocoding_exact
+3,Tim Elliot,2015-01-02,shot,gun,53,M,A,Shelton,WA,true,attack,Not fleeing,false,-123.122,47.247,POINT(-123.122 47.247),true
