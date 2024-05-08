@@ -4,11 +4,10 @@ In order to get the data and have it in local, it leverages the data.world API a
 easily downloaded and saved as a CSV file.
 
 Once the data is acquired, it is time to prepare it before sending it to AWS Kinesis (Data stream).
-## Step 1: Preparing the data
+## Step 1: Preparing the data (can be improved)
 A Timestamp column is added to the data, as well as current time info for each row.
-This is done because the data being sent to AWS Kinesis should have the timestamp info, because an aggregation is done on the latter field. (Assignment's specific requirement)
-Such step could have been avoided if the aggregation was to be done on the ApproximateTimestamp of each record. That ApproximateTimestamp is added automatically
-when a record is received by Kinesis.
+This is done because the data being sent to AWS Kinesis should have the timestamp info, because an aggregation is done on the latter field.
+Such step could have been avoided if the aggregation was to be done on the ApproximateTimestamp of each record. That ApproximateTimestamp is added automatically when a record is received by Kinesis.
 
 ## Step 2: Sending the data
 Using version 2 of AWS SDK, the records are infinitely sent to the AWS Kinesis stream.
