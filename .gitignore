@@ -1,5 +1,5 @@
-./env
-./out
-./rtsaws
-./.vscode
-./vendor/
+env
+out
+rtsaws
+.vscode
+vendor/
