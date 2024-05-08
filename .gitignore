@@ -3,3 +3,4 @@ out
 rtsaws
 .vscode
 vendor/
+infra/.terraform
